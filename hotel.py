@@ -37,11 +37,11 @@ def checkin():
 
 checkin()
 
-floorho = hotel.keys()
+
 print("These are the floors that we have available, which room would you like to check in?")
 def checkfloor():
     checkfloor = input("Floor 1, floor 2, floor 3? ('1','2', or '3'): ")
-    floorho = hotel.get()
+    floorho = hotel.get('dict', 'key')
     while checkfloor == range(1,3):
         if checkfloor.lower() == ('1'):
             print(floorho('1'))
